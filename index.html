@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAProxy VPN — Безопасный интернет без границ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f1115;
+            color: #ffffff;
+        }
+        .glow-red {
+            text-shadow: 0 0 20px rgba(239, 68, 68, 0.7);
+        }
+        .bg-glow {
+            background: radial-gradient(circle at center, rgba(239, 68, 68, 0.15) 0%, transparent 70%);
+        }
+        .glass-card {
+            background: rgba(30, 30, 30, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(15, 17, 21, 0.85);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-red-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card rounded-none border-t-0 border-l-0 border-r-0 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-shield-halved text-red-500 text-2xl"></i>
+                    <span class="font-bold text-xl tracking-tight">BAProxy <span class="text-red-500">VPN</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#features" class="hover:text-red-400 px-3 py-2 rounded-md text-sm font-medium transition">Преимущества</a>
+                        <a href="#tariffs" class="hover:text-red-400 px-3 py-2 rounded-md text-sm font-medium transition">Тарифы</a>
+                        <a href="https://github.com/BattleAngell/vpn-releases/releases/latest" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition shadow-[0_0_15px_rgba(239,68,68,0.5)]">Скачать VPN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-32 pb-20 sm:pt-40 sm:pb-24 hero-bg overflow-hidden">
+        <div class="absolute inset-0 bg-glow"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight mb-8">
+                Твой интернет. <br/><span class="text-red-500 glow-red">Без ограничений.</span>
+            </h1>
+            <p class="mt-4 max-w-2xl text-xl text-gray-300 mx-auto mb-10">
+                BAProxy VPN — это быстрый, анонимный и полностью настраиваемый VPN для Android. Раздельное туннелирование, бесплатные серверы и премиум-скорость.
+            </p>
+            <div class="flex justify-center gap-4 flex-col sm:flex-row">
+                <a href="https://github.com/BattleAngell/vpn-releases/releases/latest" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full transition transform hover:scale-105 shadow-[0_0_20px_rgba(239,68,68,0.6)] flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-android text-xl"></i> Скачать для Android
+                </a>
+                <a href="https://t.me/BAProxyBABot" class="glass-card hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full transition transform hover:scale-105 flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-telegram text-xl text-blue-400"></i> Telegram Бот
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="py-24 bg-[#0a0c0f]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Почему выбирают нас?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 text-center hover:border-red-500/50 transition duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 mx-auto bg-red-500/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-route text-3xl text-red-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Раздельное туннелирование</h3>
+                    <p class="text-gray-400 text-sm">Сами выбирайте, какие приложения будут использовать VPN, а какие — прямой интернет. Полный контроль на вашем Android.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 text-center hover:border-red-500/50 transition duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 mx-auto bg-red-500/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-bolt text-3xl text-red-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Высокая скорость</h3>
+                    <p class="text-gray-400 text-sm">Мощные серверы обеспечивают минимальный пинг и стабильное подключение 24/7 без лагов и обрывов.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 text-center hover:border-red-500/50 transition duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 mx-auto bg-red-500/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-gift text-3xl text-red-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Бесплатный старт</h3>
+                    <p class="text-gray-400 text-sm">Начните пользоваться VPN абсолютно бесплатно. У нас есть Free-серверы для базовых нужд без обязательных подписок.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div id="tariffs" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-glow opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Прозрачные тарифы</h2>
+                <p class="mt-4 text-gray-400">Управление балансом и пополнение осуществляется безопасно через Telegram-бота.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Free Plan -->
+                <div class="glass-card p-8 flex flex-col transition hover:border-gray-500">
+                    <h3 class="text-2xl font-bold text-gray-300 mb-2">Free</h3>
+                    <p class="text-4xl font-extrabold text-white mb-6">0 ₽<span class="text-lg text-gray-500 font-normal">/день</span></p>
+                    <ul class="flex-1 space-y-4 mb-8 text-gray-300 text-sm">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Базовая скорость</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Бесплатная локация (Германия)</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Раздельное туннелирование</li>
+                    </ul>
+                    <a href="https://github.com/BattleAngell/vpn-releases/releases/latest" class="w-full block text-center glass-card hover:bg-gray-800 text-white font-bold py-3 rounded-lg transition border border-gray-600">Скачать приложение</a>
+                </div>
+                
+                <!-- VIP Plan -->
+                <div class="glass-card p-8 flex flex-col border-red-500/30 transition hover:border-red-500/60 relative shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+                    <h3 class="text-2xl font-bold text-red-400 mb-2">VIP</h3>
+                    <p class="text-4xl font-extrabold text-white mb-6">3.5 ₽<span class="text-lg text-gray-500 font-normal">/день</span></p>
+                    <ul class="flex-1 space-y-4 mb-8 text-gray-300 text-sm">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Максимальная скорость</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Все VIP локации</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> До 500 человек на сервер</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Приоритетная поддержка</li>
+                    </ul>
+                    <a href="https://t.me/BAProxyBABot?start=pay" class="w-full block text-center bg-gray-800 hover:bg-gray-700 border border-red-500/50 text-white font-bold py-3 rounded-lg transition">Пополнить баланс</a>
+                </div>
+
+                <!-- VIP++ Plan -->
+                <div class="glass-card p-8 flex flex-col border-red-500/60 relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(239,68,68,0.3)]">
+                    <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg uppercase tracking-wide">Премиум</div>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">VIP++</h3>
+                    <p class="text-4xl font-extrabold text-white mb-6">10 ₽<span class="text-lg text-gray-500 font-normal">/день</span></p>
+                    <ul class="flex-1 space-y-4 mb-8 text-gray-300 text-sm">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Эксклюзивный канал</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Доступ в закрытый TG-клуб</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Строго до 15 человек на сервер</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Личная поддержка 24/7</li>
+                    </ul>
+                    <a href="https://t.me/BAProxyBABot?start=pay" class="w-full block text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition shadow-[0_0_15px_rgba(239,68,68,0.5)]">Пополнить баланс</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <i class="fa-solid fa-shield-halved text-red-500 text-xl"></i>
+                <span class="font-bold text-lg">BAProxy VPN</span>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+                <a href="https://github.com/BattleAngell/vpn-releases/blob/main/TERMS.md" class="hover:text-white transition">Публичная оферта</a>
+                <a href="https://github.com/BattleAngell/vpn-releases/blob/main/PRIVACY.md" class="hover:text-white transition">Политика конфиденциальности</a>
+                <a href="mailto:support@proxyvpn.app" class="hover:text-white transition">support@proxyvpn.app</a>
+            </div>
+        </div>
+        <div class="text-center text-gray-600 text-xs mt-8">
+            &copy; 2026 BAProxy VPN. Все права защищены.
+        </div>
+    </footer>
+</body>
+</html>
